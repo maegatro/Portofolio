@@ -4,6 +4,9 @@ import * as Mixins from '../Mixins';
 import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
 import Placeholder from '../images/placeholder.png';
+import FlyingBeeTruckStops from '../images/FlyingBeeTruckStops.jpg';
+import FridgeFeeder from '../images/FridgeFeeder.jpg';
+import SmartBrain from '../images/SmartBrain.png';
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
@@ -146,10 +149,10 @@ class Homepage extends React.Component {
           <AboveFold>
             <Img fluid={data.avatarHomepage.childImageSharp.fluid} alt="Name Surname" className="avatar" />
             <t.H1 primary align="center">
-              Name Surname
+              Shuntaro Maekawa
             </t.H1>
             <t.LargeP align="center" max45>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            I'm a fullstack developer based in Tokyo, Japan.
             </t.LargeP>
             <HireMe large onClick={this.openContactPopup} book>
               Hire me
@@ -157,33 +160,68 @@ class Homepage extends React.Component {
           </AboveFold>
           <Content>
             <t.H2 primary align="center" bold>
-              Lorem ipsum
+              My Skillset
             </t.H2>
             <t.P align="center" max70 className="who-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            JavaScript / HTML / CSS / NodeJS / ExpressJS / ReactJS / Redux / VueJS/
+            Knex / PostGres / GraphQL / Mocha&Chai /Webpack /Heroku
             </t.P>
             <t.H2 primary align="center" bold className="portfolio">
-              Portfolio
+              Projects
             </t.H2>
           </Content>
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={FlyingBeeTruckStops} alt="Placeholder title" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
+                <t.H2 bold>Flying Bee Truck Stops</t.H2>
+                <t.P>This is a fullstack app that display truck stops in the USA that are searchable by state, city, highway, car services, or amenities.</t.P>
+                {/* <t.P>Dolor sit amet</t.P> */}
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href="https://flying-bee-truck-stop.herokuapp.com/">
+                  See this project
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
           </Block>
           <Block>
+            <BlockContent>
+              <DivWrapper>
+                <t.H2 bold>Fridge Feeder</t.H2>
+                <t.P>Fridge-Feeder is a CRUD API service using Express, Knex, and Postgres</t.P>
+                {/* <t.P>Dolor sit amet</t.P> */}
+                <LinkButton primary bold className="link" as="a"
+                  target="_blank"
+                  href="https://github.com/maegatro/Fridge-Feeder">
+                  See this project
+                </LinkButton>
+              </DivWrapper>
+              <DivWrapper>
+                <ItemImage src={FridgeFeeder} alt="Placeholder title" />
+              </DivWrapper>
+            </BlockContent>
+          </Block>
+          <Block>
+            <BlockContent>
+              <DivWrapper>
+                <ItemImage src={SmartBrain} alt="Placeholder title" />
+              </DivWrapper>
+              <DivWrapper>
+                <t.H2 bold>Smart Brain</t.H2>
+                <t.P>Smart brain is an app built with ReactJS. Smart brain detects faces in a picture.</t.P>
+                {/* <t.P>Dolor sit amet</t.P> */}
+                <LinkButton primary bold className="link" as="a"
+                  target="_blank"
+                  href="https://github.com/maegatro/smart-brain">
+                  See this project
+                </LinkButton>
+              </DivWrapper>
+            </BlockContent>
+          </Block>
+          {/* <Block>
             <BlockContent>
               <DivWrapper>
                 <t.H2 bold>Placeholder website</t.H2>
@@ -199,41 +237,7 @@ class Homepage extends React.Component {
                 <ItemImage src={Placeholder} alt="Placeholder title" />
               </DivWrapper>
             </BlockContent>
-          </Block>
-          <Block>
-            <BlockContent>
-              <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
-              </DivWrapper>
-              <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
-                  target="_blank"
-                  href="#">
-                  Lorem ipsum
-                </LinkButton>
-              </DivWrapper>
-            </BlockContent>
-          </Block>
-          <Block>
-            <BlockContent>
-              <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
-                  target="_blank"
-                  href="#">
-                  Lorem ipsum
-                </LinkButton>
-              </DivWrapper>
-              <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
-              </DivWrapper>
-            </BlockContent>
-          </Block>
+          </Block> */}
           <WorkWithMe>
             <t.H1 green>Get in touch with me</t.H1>
             <t.LargeP>
