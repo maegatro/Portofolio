@@ -84,11 +84,14 @@ class AboutMe extends React.Component {
         <Layout theme="white" openContactPopup={this.openContactPopup}>
           <AboveFold>
             <t.H1 green align="center">
-              Hello,  I'm Shuntaro Maekawa
+              Hello, I'm Shuntaro Maekawa
             </t.H1>
             <t.LargeP align="center" max70>
-            I'm a fullstack developer who loves design and coding. I've always enjoyed being creative and challenging myself by designing and building a website. 
-            I like potatoes.
+              I'm a full-stack software engineer who loves building a product that provides a good influence on people.
+              My passion goes to learning new technologies, building an app with beautiful UI, and playing/watching
+              football. I became a software engineer because I feel empowered to create a product that can solve the
+              problems and challenges we have. I'm currently building several full-stack apps with node/express,
+              Reactjs, Postgres, knex.js, Next.js, and Heroku.
             </t.LargeP>
           </AboveFold>
           <Content>
