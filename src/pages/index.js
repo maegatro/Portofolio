@@ -152,7 +152,7 @@ class Homepage extends React.Component {
               Shuntaro Maekawa
             </t.H1>
             <t.LargeP align="center" max45>
-            I'm a fullstack developer based in Tokyo, Japan.
+              I'm a fullstack developer based in Tokyo, Japan.
             </t.LargeP>
             <HireMe large onClick={this.openContactPopup} book>
               Hire me
@@ -163,8 +163,12 @@ class Homepage extends React.Component {
               My Skillset
             </t.H2>
             <t.P align="center" max70 className="who-desc">
-            JavaScript / HTML / CSS / NodeJS / ExpressJS / ReactJS / Redux / VueJS/
-            Knex / PostGres / GraphQL / Mocha&Chai /Webpack /Heroku
+              Strong: JavaScript, Node.js, Express.js, ReactJS, Redux, webpack, HTML5/CSS3, Next.js, Material-UI,
+              styled-components, Framer Motion, Git
+            </t.P>
+            <t.P align="center" max70 className="who-desc">
+              Experienced: Typescript, PostgreSQL, Knex.js, GraphQL, Vue.js, GatsbyJS, Python, Jupyter Notebook,
+              mocha/chai, Heroku, MongoDB, Netlify, Flutter, Dart, Nginx, Hugo, WordPress
             </t.P>
             <t.H2 primary align="center" bold className="portfolio">
               Projects
@@ -177,11 +181,19 @@ class Homepage extends React.Component {
               </DivWrapper>
               <DivWrapper>
                 <t.H2 bold>Flying Bee Truck Stops</t.H2>
-                <t.P>This is a fullstack app that display truck stops in the USA that are searchable by state, city, highway, car services, or amenities.</t.P>
+                <t.P>
+                  This is a fullstack app that display truck stops in the USA that are searchable by state, city,
+                  highway, car services, or amenities.
+                </t.P>
                 {/* <t.P>Dolor sit amet</t.P> */}
-                <LinkButton primary bold className="link" as="a"
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
                   target="_blank"
-                  href="https://flying-bee-truck-stop.herokuapp.com/">
+                  href="https://flying-bee-truck-stop.herokuapp.com/"
+                >
                   See this project
                 </LinkButton>
               </DivWrapper>
@@ -193,9 +205,14 @@ class Homepage extends React.Component {
                 <t.H2 bold>Fridge Feeder</t.H2>
                 <t.P>Fridge-Feeder is a CRUD API service using Express, Knex, and Postgres</t.P>
                 {/* <t.P>Dolor sit amet</t.P> */}
-                <LinkButton primary bold className="link" as="a"
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
                   target="_blank"
-                  href="https://github.com/maegatro/Fridge-Feeder">
+                  href="https://github.com/maegatro/Fridge-Feeder"
+                >
                   See this project
                 </LinkButton>
               </DivWrapper>
@@ -213,9 +230,14 @@ class Homepage extends React.Component {
                 <t.H2 bold>Smart Brain</t.H2>
                 <t.P>Smart brain is an app built with ReactJS. Smart brain detects faces in a picture.</t.P>
                 {/* <t.P>Dolor sit amet</t.P> */}
-                <LinkButton primary bold className="link" as="a"
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
                   target="_blank"
-                  href="https://github.com/maegatro/smart-brain">
+                  href="https://github.com/maegatro/smart-brain"
+                >
                   See this project
                 </LinkButton>
               </DivWrapper>
@@ -240,9 +262,7 @@ class Homepage extends React.Component {
           </Block> */}
           <WorkWithMe>
             <t.H1 green>Get in touch with me</t.H1>
-            <t.LargeP>
-              Fancy working with me? Contact me for more info!{' '}
-            </t.LargeP>
+            <t.LargeP>Fancy working with me? Contact me for more info! </t.LargeP>
             <HireMe onClick={this.openContactPopup} book>
               Contact me
             </HireMe>
